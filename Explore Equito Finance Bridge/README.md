@@ -1,12 +1,14 @@
-# Network Architecture
+# Explore Equito Finance Bridge
 
-#### Equito Brdige Network
+## Network Architecture
+
+### Equito Brdige Network
 
 The Equito Bridge Network is controlled by on-chain smart contracts powering the protocol, oracles that transfer data from one network to another and validators that authenticate transactions on the network. The network is uncontrolled and maintains security by ensuring validators run the same process upon receiving the various chains events. Only when two-thirds of validators have signed the same transaction with their key collectively, the network achieves consensus.
 
 ![Equito Bridge Network](../images/equito-bridge-network.png)
 
-## Protocol Layers
+### Protocol Layers
 
 The Bridge Network protocol consists of three main layers:
 
@@ -16,7 +18,7 @@ The Bridge Network protocol consists of three main layers:
 3. Protocol Layer (validator network) - Combines the blockchain layer with the validators.
    Every cross-chain transaction initiated through bridge contracts is assigned a unique identifier (hash). Bridge validators track every transaction that passes through the smart contract of the protocol and soon as the transaction achieves its entirety, each validator is required to sign the transaction by its private key, all the while the oracle transfer the data to different chains.
 
-# Benefits of Equito Bridge
+## Benefits of Equito Bridge
 
 Equito Bridge offers several advantages over traditional cross-chain transaction methods:
 
@@ -28,7 +30,7 @@ Equito Bridge offers several advantages over traditional cross-chain transaction
 
 - **Interoperability**: Equito Bridge promotes seamless interoperability between different blockchain networks, fostering a more connected blockchain ecosystem.
 
-# Use Cases
+## Use Cases
 
 Equito Bridge can be applied to various use cases, including:
 
