@@ -71,3 +71,5 @@ The integration of these technologies is at the heart of Equito Bridge's functio
 ## Validator Registration and Participation
 
 Validators in the Equito Bridge network are registered automatically upon hosting, and all registered validators have the opportunity to actively participate in signing transactions. To ensure a dynamic and responsive network, new validators are periodically onboarded. New validator registrations are processed every 2 weeks.
+
+Test work
