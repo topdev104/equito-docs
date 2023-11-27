@@ -1,8 +1,8 @@
 Cross-chain messaging (CCM) is a crucial feature in the Equito Bridge ecosystem, allowing users to seamlessly send messages between different blockchain networks. This capability is particularly valuable for applications that require minimal logic or state synchronization across multiple chains, as well as for scenarios where unidirectional data transmission is sufficient.
 
-![Equito Bridge Network](./images/cross-chain-message.png)
+![Equito Bridge Network](../images/cross-chain-message.png)
 
-### Architecture of CCM
+# Architecture of CCM
 
 CCM operates through the deployment of specialized contracts on two or more interconnected blockchain networks. At the core of this communication mechanism lies the Equito Bridge, which serves as a reliable relayer responsible for transferring messages between these blockchains.
 
@@ -14,7 +14,7 @@ The process of sending a message via CCM involves several steps:
 
 3. **Message Reception**: Upon reaching the destination chain, the message is received by a designated CCM contract. The CCM contract processes the incoming message through its `onReceiveMessage()` function, which enables the execution of specific actions or interactions on the destination chain.
 
-### Use Cases of CCM
+# Use Cases of CCM
 
 Cross-chain messaging in Equito Bridge is particularly well-suited for a range of use cases, such as:
 
@@ -22,11 +22,11 @@ Cross-chain messaging in Equito Bridge is particularly well-suited for a range o
 
 - **One-Way Data Transfer**: CCM is ideal for scenarios where data only needs to be transmitted from one chain to another in a unidirectional manner. In these cases, the sender does not require feedback or results from the destination chain, streamlining the communication process.
 
-### Security and Confidentiality
+# Security and Confidentiality
 
 Equito Bridge places a strong emphasis on the security and confidentiality of all cross-chain messages. All message data is encrypted and secured, ensuring that sensitive information remains protected throughout the communication process. This commitment to data privacy and security is essential for maintaining user trust and safeguarding valuable assets.
 
-### Decentralized Validation and Consensus
+# Decentralized Validation and Consensus
 
 In Equito Bridge, a network of validators acts as decentralized observers responsible for reaching consensus on relevant external state and events across interconnected blockchains. These validators also have the capability to update external chain state through multi-signature signing, ensuring the integrity and accuracy of cross-chain transactions.
 
