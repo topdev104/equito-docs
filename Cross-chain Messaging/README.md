@@ -1,7 +1,7 @@
 # Cross-chain Messaging
 Cross-chain messaging (CCM) is a crucial feature in the Equito Bridge ecosystem, allowing users to seamlessly send messages between different blockchain networks. This capability is particularly valuable for applications that require minimal logic or state synchronization across multiple chains, as well as for scenarios where unidirectional data transmission is sufficient.
 
-![Equito Bridge Network](../images/cross-chain-message.png)
+![Equito Bridge Network](./cross-chain-message.png)
 
 ## Architecture of CCM
 
