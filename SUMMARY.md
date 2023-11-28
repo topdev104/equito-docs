@@ -4,4 +4,4 @@
 - [Validator Network](<Validator Network/README.md>)
 - [Cross-chain Messaging](<Cross-chain Messaging/README.md>)
 - [Consensus](Consensus/README.md)
-- [Validator Nodes](<Validator Network/Overview.md>)
+- [Validator Nodes](<Validator Nodes/Overview.md>)
