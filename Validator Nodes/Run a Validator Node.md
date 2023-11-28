@@ -47,6 +47,7 @@ The following services offer Ethereum clients with websockets connectivity known
 
 These are the only environment variables that are required for a Validator node to run.
 Configure the necessary environment variables in the .env file by obtaining API keys from relevant external services.
+We recommend you to use premium API key for optimal performance and high quality.
 
 ```bash
 ALGOD_API_KEY=3HlRUk5h3G3UZeOWq3DN42boBkQ7yGI679WerzQN
