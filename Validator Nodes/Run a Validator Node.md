@@ -34,5 +34,3 @@ dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minute
 ## Run Validator node
 
 ### Configure your node
-
-1. Create .env file set the providers.
