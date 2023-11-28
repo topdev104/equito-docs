@@ -6,7 +6,7 @@
 
 The Equito Bridge Network is controlled by on-chain smart contracts powering the protocol, oracles that transfer data from one network to another and validators that authenticate transactions on the network. The network is uncontrolled and maintains security by ensuring validators run the same process upon receiving the various chains events. Only when two-thirds of validators have signed the same transaction with their key collectively, the network achieves consensus.
 
-![Equito Bridge Network](<Explore Equito Finance Bridge/equito-bridge-network.png>)
+![Equito Bridge Network](<./equito-bridge-network.png>)
 
 ### Protocol Layers
 
