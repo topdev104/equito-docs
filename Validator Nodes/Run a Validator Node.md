@@ -33,4 +33,13 @@ dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minute
 
 ## Run Validator node
 
-### Configure your node
+### Configuring node
+
+These are the only environment variables that are required for a Validator node to run.
+You should set these environment variables in the .env file.
+
+```bash
+INFURA_API_KEY=cb876f7f7ed64fb98108a51fac39f934
+ALCHEMY_API_KEY=cpW9bVq33Ac3lBiI2pwc269AKbGvl9MF
+QUICKNODE_RPC_URL=https://spring-summer-crater.bsc.discover.quiknode.pro/b3879f82a5ba1cf011021703133fddfde26a59a2
+```
