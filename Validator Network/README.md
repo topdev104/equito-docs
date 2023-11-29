@@ -8,7 +8,17 @@ When conducting transactions between different blockchain networks, it is essent
 
 ## Zero-Knowledge Proofs in Equito Bridge
 
-Zero-Knowledge Proofs (ZKPs) play a pivotal role in securing the Equito Bridge protocol. ZKPs enable the verification of transactions on-chain without revealing sensitive information. In Equito Bridge, ZKPs are employed to validate multi-signature transactions off-chain, ensuring the integrity of the transaction data while preserving privacy.
+### What is Zero-Knowledge Proofs
+
+Zero-Knowledge Proofs (ZKPs) is a method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, while avoiding conveying to the verifier any information beyond the mere fact of the statement's truth. The intuition underlying zero-knowledge proofs is that it is trivial to prove the possession of certain information by simply revealing it; the challenge is to prove this possession without revealing the information, or any aspect of it whatsoever.
+
+### ZKPs in Equito Bridge
+
+Zero-Knowledge Proofs are integral to the security framework of the Equito Bridge protocol. These cryptographic techniques enable the verification of transactions on-chain without compromising sensitive information, upholding transaction integrity while preserving user privacy.
+
+In the context of Equito Bridge, ZKPs play a pivotal role in validating multi-signature transactions off-chain. This application ensures that transaction data remains confidential, as parties involved can prove the validity of ownership without disclosing specific transaction details. For instance, a user can demonstrate possession of the private key associated with a particular public key without revealing the key itself, enhancing confidentiality in financial transactions where compliance with predefined conditions is crucial.
+
+The implementation of zero-knowledge proofs in Equito Bridge is exemplified by zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge). These proofs facilitate the verification of transaction validity through concise and easily verifiable proofs.
 
 ## Security Measures
 

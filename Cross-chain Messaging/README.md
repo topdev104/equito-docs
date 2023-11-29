@@ -33,3 +33,7 @@ Equito Bridge places a strong emphasis on the security and confidentiality of al
 In Equito Bridge, a network of validators acts as decentralized observers responsible for reaching consensus on relevant external state and events across interconnected blockchains. These validators also have the capability to update external chain state through multi-signature signing, ensuring the integrity and accuracy of cross-chain transactions.
 
 Equito Bridge's approach to decentralized validation and consensus is characterized by its trustless, permissionless, transparent, and efficient nature. By eliminating single points of failure and central authority, Equito Bridge provides a robust infrastructure for cross-chain messaging that users can rely on with confidence.
+
+## Fee of CCM
+
+The cost for a single message is $0.1.
