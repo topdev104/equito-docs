@@ -22,3 +22,21 @@ Validator Nodes integrate blockchain APIs into their services by making HTTP req
 
 Infura, Alchemy, and QuickNode often implement security measures such as rate limiting, authentication, and encryption to protect the integrity of their API services.
 Validator Nodes use these API providers to decentralize getting blockchain information.
+
+### Modules
+
+Validator node has several modules of the following
+
+- Verifiable Random Function Module: Enables the selection of validators through a Verifiable Random Function.
+
+- Consensus Module: Manages the consensus process among validator nodes.
+
+- Blockchain Data Retrieval Module: Retrieves blockchain data from designated blockchain API providers.
+
+- Multi-signing and Transaction Execution Module: Enables multi-signing and execution of transactions by validators.
+
+- Transaction Validation Check Module: Validates transactions to ensure their compliance with specified criteria.
+
+- Verification Module: Verifies the integrity and authenticity of data within the validator nodes.
+
+- Validators Update Module: Handles the process of updating information related to validators.
