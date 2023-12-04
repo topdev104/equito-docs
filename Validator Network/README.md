@@ -1,10 +1,10 @@
 # Validator Network
 
-The Equito Bridge is an innovative protocol designed to enhance the security and efficiency of cross-chain transactions by leveraging Zero-Knowledge Proofs (ZKPs). In the world of blockchain interoperability, the verification of validator signatures can impose significant gas fees, making it impractical for frequent cross-chain transactions. Equito Bridge addresses this challenge by adopting an optimistic approach, wherein it verifies a single multi-signature transaction through Ed25519 signature verification using ZKPs. This innovative approach substantially reduces gas fees and enhances the scalability of cross-chain transactions.
+The Equito Bridge is an innovative protocol designed to enhance the security and efficiency of cross-chain transactions by leveraging Zero-Knowledge Proofs (ZKPs). In the world of blockchain interoperability, the verification of validator signatures can impose significant gas fees, making it impractical for frequent cross-chain transactions. Equito Bridge addresses this challenge by using Zero-Knowledge Proofs, wherein it verifies a single multi-signature transaction through Ed25519 signature verification using ZKPs. This innovative approach substantially reduces gas fees and enhances the scalability of cross-chain transactions.
 
 ## Problem Statement
 
-When conducting transactions between different blockchain networks, it is essential to verify the signatures of validators. Validator signature verification typically incurs substantial gas fees, making it economically infeasible for frequent cross-chain transactions. Equito Bridge addresses this issue by adopting an optimistic approach, allowing it to verify only one multi-signature transaction instead of numerous individual validator signatures.
+When conducting transactions between different blockchain networks, it is essential to verify the signatures of validators. Validator signature verification typically incurs substantial gas fees, making it economically infeasible for frequent cross-chain transactions. Equito Bridge addresses this issue by using Zero-Knowledge Proofs, allowing it to verify only one multi-signature transaction instead of numerous individual validator signatures.
 
 ## Zero-Knowledge Proofs in Equito Bridge
 
