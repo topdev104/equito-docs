@@ -1,10 +1,10 @@
 # Validator Network
 
-The Equito Bridge is an innovative protocol designed to enhance the security and efficiency of cross-chain transactions by leveraging Zero-Knowledge Proofs (ZKPs). In the world of blockchain interoperability, the verification of validator signatures can impose significant gas fees, making it impractical for frequent cross-chain transactions. Equito Bridge addresses this challenge by using Zero-Knowledge Proofs, wherein it verifies a single multi-signature transaction through Ed25519 signature verification using ZKPs. This innovative approach substantially reduces gas fees and enhances the scalability of cross-chain transactions.
+The Equito Bridge is an innovative protocol designed to enhance the security and efficiency of cross-chain transactions by leveraging Zero-Knowledge Proofs (ZKPs). In the world of blockchain interoperability, the verification of validator signatures can impose significant gas fees, making it impractical for frequent transactions. Equito Bridge addresses this challenge by using Zero-Knowledge Proofs, wherein it verifies a single multi-signature transaction through Ed25519 signature verification using ZKPs. This approach substantially reduces gas fees and enhances the scalability of cross-chain transactions.
 
 ## Problem Statement
 
-When conducting transactions between different blockchain networks, it is essential to verify the signatures of validators. Validator signature verification typically incurs substantial gas fees, making it economically infeasible for frequent cross-chain transactions. Equito Bridge addresses this issue by using Zero-Knowledge Proofs, allowing it to verify only one multi-signature transaction instead of numerous individual validator signatures.
+When conducting transactions between different blockchain networks, it is essential to verify the signatures of validators. Validator signature verification typically incurs substantial gas fees, making it economically infeasible for frequent transactions. Equito Bridge addresses this issue by using Zero-Knowledge Proofs, allowing it to verify only one multi-signature transaction instead of executing individual signing transactions.
 
 ## Zero-Knowledge Proofs in Equito Bridge
 
@@ -57,9 +57,9 @@ Multi-signature technology is a fundamental component of Equito Bridge's transac
 **Zero-Knowledge Proofs (ZKPs), Specifically zk-SNARKs**
 Zero-knowledge proofs, particularly zk-SNARKs, are instrumental in Equito Bridge for achieving efficient and secure on-chain verification without revealing sensitive transaction details.
 
-1. **Generation of zk-SNARKs**: When a multi-signature transaction is submitted to Equito Bridge's smart contract on the destination chain, the originating chain generates a zk-SNARK proof. This proof is derived from the complete transaction data, but it doesn't disclose the specifics.
+1. **Generation of zk-SNARKs**: When a multi-signature transaction is submitted to Equito Bridge's smart contract on the destination chain, the contract verify it by using zk-SNARKs proof. This proof is derived from the complete transaction data, but it doesn't disclose the specifics.
 
-2. **Efficient Verification**: Equito Bridge's smart contract is equipped with a zk-SNARK verification mechanism. Upon receiving a transaction along with its zk-SNARK proof, the smart contract can swiftly verify the proof without needing to access or reveal the underlying transaction data. This process is highly efficient and minimizes computational resources.
+2. **Efficient Verification**: Equito Bridge's smart contract is equipped with a zk-SNARK verification mechanism. Upon receiving a multi-sig transaction, the smart contract can swiftly verify the proof without needing to access or reveal the underlying transaction data. This process is highly efficient and minimizes computational resources.
 
 3. **Transaction Privacy**: The beauty of zk-SNARKs is that they preserve transaction privacy. Despite the smart contract verifying the transaction's authenticity, it does not gain access to transaction amounts, sender/receiver addresses, or other confidential details. This ensures that user privacy is maintained at a high level.
 
@@ -68,9 +68,9 @@ The integration of these technologies is at the heart of Equito Bridge's functio
 
 1. **Transaction Initiation**: When a user initiates a cross-chain transaction on Equito Bridge, it first goes through a multi-signature validation process involving the network of validators. This step establishes consensus and verifies the transaction's authenticity.
 
-2. **Authorization**: Once the multi-signature requirement is met, the transaction is considered authorized and is then sent to the smart contract on the destination blockchain.
+2. **Authorization**: Once the multi-signature requirement is met, the transaction is considered authorized and is then sent to the smart contract along with signatures on the destination blockchain.
 
-3. **Zero-Knowledge Proof Verification**: On the destination blockchain, the smart contract receives the transaction along with the accompanying zk-SNARK proof. The smart contract swiftly verifies the proof's authenticity, ensuring that the transaction adheres to all necessary criteria without exposing sensitive information.
+3. **Zero-Knowledge Proof Verification**: On the destination blockchain, the smart contract receives the transaction along with signatures. The smart contract swiftly verifies the signatures' authenticity by using zk-SNARKs proof, ensuring that the transaction adheres to all necessary criteria without exposing sensitive information.
 
 4. **Gas Fee Reduction and Scalability**: The use of zk-SNARKs significantly reduces the gas fees associated with on-chain verification. Traditional on-chain verification processes can be resource-intensive and costly. However, zk-SNARKs streamline this process, resulting in substantial savings for users. Additionally, this efficiency contributes to the scalability of Equito Bridge, allowing it to handle a higher transaction volume without congestion.
 
