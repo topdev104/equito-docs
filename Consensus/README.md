@@ -2,11 +2,11 @@
 
 ## Verifiable Random Function (VRF)
 
-Equito Bridge employs a Verifiable Random Function (VRF) to select validators for transaction signing. This cryptographic mechanism takes into validator's EQT tokens when determining its probability of being selected. The more EQT tokens a validator holds, the higher its chances of being chosen. This method eliminates any advantage gained by creating multiple validators, promoting fairness and preventing centralization.
+Equito Protocol employs a Verifiable Random Function (VRF) to select validators for transaction signing. This cryptographic mechanism takes into validator's EQT tokens when determining its probability of being selected. The more EQT tokens a validator holds, the higher its chances of being chosen. This method eliminates any advantage gained by creating multiple validators, promoting fairness and preventing centralization.
 
-## Equito Bridge Consensus Protocol
+## Equito Protocol Consensus
 
-The Equito Bridge consensus protocol leverages the VRF to establish a secure and efficient method for selecting validators to sign transactions. When a transaction is proposed to the validator network, a committee of validators is randomly selected. This committee's composition is based on the amount of EQT tokens held by each validator. Validators that have more EQT tokens will have a greater influence within the committee. Essentially, it's as if every EQT token participates in its own lottery, ensuring a decentralized and fair selection process. This approach maintains high network performance while allowing all validators in the network an opportunity to be involved.
+The Equito Protocol consensus leverages the VRF to establish a secure and efficient method for selecting validators to sign transactions. When a transaction is proposed to the validator network, a committee of validators is randomly selected. This committee's composition is based on the amount of EQT tokens held by each validator. Validators that have more EQT tokens will have a greater influence within the committee. Essentially, it's as if every EQT token participates in its own lottery, ensuring a decentralized and fair selection process. This approach maintains high network performance while allowing all validators in the network an opportunity to be involved.
 
 ## Transaction Verification Process
 

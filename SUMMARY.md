@@ -1,6 +1,6 @@
 # Table of contents
 
-- [Explore Equito Finance Bridge](<Explore Equito Finance Bridge/README.md>)
+- [Explore Equito Protocol](<Explore Equito Protocol/README.md>)
 - [Validator Network](<Validator Network/README.md>)
 - [Cross-chain Messaging](<Cross-chain Messaging/README.md>)
 - [Consensus](Consensus/README.md)
