@@ -8,4 +8,4 @@
   - [System Requirements](<Validator Nodes/System Requirements.md>)
   - [Run a Validator Node](<Validator Nodes/Run a Validator Node.md>)
   <!-- - [Configuring Node](<Validator Nodes/Configuring Node.md>) -->
-  - [Testing Guide](<Validator Nodes/Testing Guide.md>)
+  - [Testing Guide](<Validator Nodes/Testing Guide/Testing Guide.md>)
