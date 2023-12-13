@@ -77,8 +77,8 @@ Run the following command to create .env file and set environment variables.
 
 ```sh
 echo "
-TEST1=This is test01
-TEST2=This is test02
+PORT=3000
+NODE_ENV=production
 " > ~/.equito-node/.env
 ```
 
@@ -91,29 +91,5 @@ cat ~/.equito-node/.env
 Start the Equito Node by running the Docker image.
 
 ```sh
-cd ~/.equito-node
-docker run --env-file ~/.equito-node/.env --platform linux/x86_64/v8 -it -p 7890:7890 robindev912/equito-validator-node
-```
-
-### Configuring node
-
-The following services offer Ethereum clients with websockets connectivity known to work with the Validator node.
-<br />
-[PureStake](https://developer.purestake.io/)
-<br />
-[Alchemy](https://www.alchemy.com/)
-<br />
-[Infura](https://www.infura.io/)
-<br />
-[QuickNode](https://www.quiknode.io/)
-
-These are the only environment variables that are required for a Validator node to run.
-Configure the necessary environment variables in the .env file by obtaining API keys from relevant external services.
-We recommend you to use premium API key for optimal performance and high quality.
-
-```bash
-ALGOD_API_KEY=3HlRUk5h3G3UZeOWq3DN42boBkQ7yGI679WerzQN
-INFURA_API_KEY=cb876f7f7ed64fb98108a51fac39f934
-ALCHEMY_API_KEY=cpW9bVq33Ac3lBiI2pwc269AKbGvl9MF
-QUICKNODE_RPC_URL=https://spring-summer-crater.bsc.discover.quiknode.pro/b3879f82a5ba1cf011021703133fddfde26a59a2
+cd ~/.equito-node && docker run --env-file ~/.equito-node/.env -d --platform linux/x86_64/v8 -it -p 7890:7890 robindev912/equito-validator-node
 ```
