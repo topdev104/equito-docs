@@ -6,19 +6,19 @@ This guide will teach you how to run a Validator node locally using Docker. The 
 
 ## Install docker
 
-Update your existing list of packages.
+1. Update your existing list of packages.
 
 ```sh
 sudo apt update
 ```
 
-Install a few prerequisite packages which let apt use packages over HTTPS.
+2. Install a few prerequisite packages which let apt use packages over HTTPS.
 
 ```sh
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 ```
 
-Then add the GPG key for the official Docker repository to your system.
+3. Add the GPG key for the official Docker repository to your system.
 
 ```sh
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -30,7 +30,7 @@ Add the Docker repository to APT sources.
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 ```
 
-Install Docker.
+4. Install Docker.
 
 ```sh
 sudo apt install -y docker-ce
@@ -48,19 +48,19 @@ sudo systemctl status docker
 
 1. Run PostgreSQL in a Docker container. You can replace mysecretpassword with your own password.
 
-```bash
+```sh
 docker run --name eqt-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 ```
 
 2. Confirm that the container is running. Note the 5432 port is published 0.0.0.0:5432->5432/tcp and therefore accessible outside of Docker.
 
-```bash
+```sh
 docker ps -a -f name=eqt-postgres
 ```
 
 If the container is running successfully, the output shows a healthy status:
 
-```bash
+```sh
 CONTAINER ID   IMAGE      COMMAND                  CREATED         STATUS         PORTS                    NAMES
 dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:5432->5432/tcp   eqt-postgres
 ```
@@ -96,13 +96,13 @@ cd ~/.equito-node && docker run --env-file ~/.equito-node/.env -d --platform lin
 
 4. Confirm that the container is running. Note the 7890 port is published 0.0.0.0:7890->7890/tcp and therefore accessible outside of Docker.
 
-```bash
+```sh
 docker ps -a -f name=equito-bridge
 ```
 
 If the container is running successfully, the output shows a healthy status:
 
-```bash
+```
 CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS         PORTS                                       NAMES
 63318f25608e   robindev912/equito-validator-node   "/sbin/tini -- npm s…"   7 minutes ago   Up 7 minutes   0.0.0.0:7890->7890/tcp, :::7890->7890/tcp   equito-bridge
 ```
