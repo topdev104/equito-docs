@@ -67,13 +67,13 @@ dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minute
 
 ## Run Validator node
 
-Create a local directory to hold the Equito Protocol data
+1. Create a local directory to hold the Equito Protocol data
 
 ```sh
 mkdir ~/.equito-node
 ```
 
-Run the following command to create .env file and set environment variables.
+2. Run the following command to create .env file and set environment variables.
 
 ```sh
 echo "
@@ -88,8 +88,21 @@ You can confirm that the variables are set correctly in .env file.
 cat ~/.equito-node/.env
 ```
 
-Start the Equito Node by running the Docker image.
+3. Start the Equito Node by running the Docker image.
 
 ```sh
 cd ~/.equito-node && docker run --env-file ~/.equito-node/.env -d --platform linux/x86_64/v8 --name equito-bridge -it -p 7890:7890 robindev912/equito-validator-node
+```
+
+4. Confirm that the container is running. Note the 7890 port is published 0.0.0.0:7890->7890/tcp and therefore accessible outside of Docker.
+
+```bash
+docker ps -a -f name=equito-bridge
+```
+
+If the container is running successfully, the output shows a healthy status:
+
+```bash
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+63318f25608e   robindev912/equito-validator-node   "/sbin/tini -- npm s…"   7 minutes ago   Up 7 minutes   0.0.0.0:7890->7890/tcp, :::7890->7890/tcp   equito-bridge
 ```
