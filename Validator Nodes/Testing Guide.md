@@ -69,21 +69,31 @@ dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minute
 
 Create a local directory to hold the Equito Protocol data
 
+```sh
 mkdir ~/.equito-node
+```
 
 Run the following command to create .env file and set environment variables.
+
+```sh
 echo "
 TEST1=This is test01
 TEST2=This is test02
 " > ~/.equito-node/.env
+```
 
-You can confirm that the variables are set correct in .env file.
+You can confirm that the variables are set correctly in .env file.
 
+```sh
 cat ~/.equito-node/.env
+```
 
 Start the Equito Node by running the Docker image.
+
+```sh
 cd ~/.equito-node
 docker run --env-file ~/.equito-node/.env --platform linux/x86_64/v8 -it -p 7890:7890 robindev912/equito-validator-node
+```
 
 ### Configuring node
 
