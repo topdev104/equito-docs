@@ -15,20 +15,20 @@ This guide will teach you how to run a Validator node locally using Docker. The 
 1. Run PostgreSQL in a Docker container. You can replace mysecretpassword with your own password.
 
 ```bash
-docker run --name cl-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+docker run --name eqt-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 ```
 
 2. Confirm that the container is running. Note the 5432 port is published 0.0.0.0:5432->5432/tcp and therefore accessible outside of Docker.
 
 ```bash
-docker ps -a -f name=cl-postgres
+docker ps -a -f name=eqt-postgres
 ```
 
 If the container is running successfully, the output shows a healthy status:
 
 ```bash
 CONTAINER ID   IMAGE      COMMAND                  CREATED         STATUS         PORTS                    NAMES
-dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:5432->5432/tcp   cl-postgres
+dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:5432->5432/tcp   eqt-postgres
 ```
 
 ## Run Validator node
