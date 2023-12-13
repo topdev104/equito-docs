@@ -2,8 +2,6 @@
 
 This guide will teach you how to run a Validator node locally using Docker. The Validator node will be configured to connect to the Goerli testnet.
 
-# Requirements
-
 ## Install docker
 
 1. Update your existing list of packages.
@@ -42,9 +40,9 @@ Docker should now be installed, the daemon started, and the process enabled to s
 sudo systemctl status docker
 ```
 
-# Using Docker
+## Using Docker
 
-## Run PostgreSQL
+### Run PostgreSQL
 
 1. Run PostgreSQL in a Docker container. You can replace mysecretpassword with your own password.
 
@@ -65,7 +63,7 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED         STATUS       
 dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:5432->5432/tcp   eqt-postgres
 ```
 
-## Run Validator node
+### Run Validator node
 
 1. Create a local directory to hold the Equito Protocol data
 
