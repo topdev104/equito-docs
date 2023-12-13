@@ -71,11 +71,24 @@ dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minute
 mkdir ~/.equito-node
 ```
 
-2. Run the following command to create .env file and set environment variables. See how to get the API keys in [Configuring node](#configuring-node)
+2. Run the following command to create .env file and set environment variables. It includes setttings of wallet and API keys. The wallet should be include more than 100 ALGO, 1 Goerli ETH and 1 BNB.
+
+These are the faucets to get test tokens.
+
+[Algorand faucet](https://bank.testnet.algorand.network/)
+
+[Goerli ETH faucet](https://goerlifaucet.com/)
+
+[BNB faucet](https://testnet.binance.org/faucet-smart)
+
+See how to get the API keys in [Configuring node](#configuring-node)
 
 ```sh
 echo "
 PORT=7890
+ALGO_WALLET_MNEMONIC=<algorand-wallet-mnemonic>
+ETH_WALLET_PRIVATE_KEY=<ethereum-wallet-private-key>
+BNB_WALLET_PRIVATE_KEY=<binance-wallet-private-key>
 ALGOD_API_KEY=<your-algod-api-key>
 INFURA_KEY=<your-infura-key>
 TESTNET_ALCHEMY_KEY=<your-testnet-alchemy-key>
@@ -88,6 +101,9 @@ This is an example of .env setting.
 ```sh
 echo "
 PORT=7890
+ALGO_WALLET_MNEMONIC=gift only mouse goddess city benefit obtain evoke excite predict safe neither purpose route sock unfold boil pass battle agent body what abandon finish anchor
+ETH_WALLET_PRIVATE_KEY=756b7f2f95346df4767041da97be8f8c6cbd3cab9de46ef31c85b4af1c507c5a
+BNB_WALLET_PRIVATE_KEY=40325b340a0755405f6e13c297511a793c29db6b91ed2f9d6999d5624caccf3c
 ALGOD_API_KEY=3HlRUk5h3G3UZeOWq3DN46boBkQ7yGI719WerzQN
 INFURA_KEY=cb206f7f7ed64fb98108a56fac39f934
 TESTNET_ALCHEMY_KEY=ldhqIo8W9kfM6jHV31W4Xuvk2O2PMYP8
@@ -122,14 +138,14 @@ CONTAINER ID   IMAGE                               COMMAND                  CREA
 
 ### Configuring node
 
+The following services offer Ethereum clients with websockets connectivity known to work with the Validator node.
+It is necessary to get API keys and set them in .env file.
+
 #### PureStake
 
-The following services offer Ethereum clients with websockets connectivity known to work with the Validator node.
-<br />
 Visit [PureStake](https://developer.purestake.io/) and create API key.
 
 ![PureStake](./purestake.png)
-<br />
 
 #### Alchemy
 
@@ -138,7 +154,6 @@ Visit [Alchemy](https://www.alchemy.com/) and create API key.
 ![Alchemy](./alchemy.png)
 
 ![Alchemy key](./alchemy-key.png)
-<br />
 
 #### Infura
 
