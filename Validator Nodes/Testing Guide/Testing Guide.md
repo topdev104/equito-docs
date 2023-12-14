@@ -159,9 +159,11 @@ CONTAINER ID   IMAGE                               COMMAND                  CREA
 63318f25608e   robindev912/equito-validator-node   "/sbin/tini -- npm s…"   7 minutes ago   Up 7 minutes   0.0.0.0:7890->7890/tcp, :::7890->7890/tcp   equito-bridge
 ```
 
-### Configuring node
+## Configuring node
 
-The following services offer Ethereum clients with websockets connectivity known to work with the Validator node.
+### Blockchain API endpoints
+
+The following services offer Ethereum and Binance API endpoints to work with the Validator node.
 It is necessary to get API endpoints and set them in .env file.
 
 #### Alchemy
@@ -191,3 +193,7 @@ Visit [QuickNode](https://www.quicknode.com/) and create API endpoints.
 These are the only environment variables that are required for a Validator node to run.
 Configure the necessary environment variables in the .env file by obtaining API endpoints from relevant external services.
 We recommend you to use premium API endpoints for optimal performance and high quality.
+
+### Open ports for Node API
+
+Ensure that port 7890 is open for communication with the Equito Node APIs.
