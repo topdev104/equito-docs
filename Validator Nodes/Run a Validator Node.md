@@ -37,8 +37,6 @@ dc08cfad2a16   postgres   "docker-entrypoint.s…"   3 minutes ago   Up 3 minute
 
 The following services offer Ethereum clients with websockets connectivity known to work with the Validator node.
 <br />
-[PureStake](https://developer.purestake.io/)
-<br />
 [Alchemy](https://www.alchemy.com/)
 <br />
 [Infura](https://www.infura.io/)
@@ -50,7 +48,6 @@ Configure the necessary environment variables in the .env file by obtaining API 
 We recommend you to use premium API key for optimal performance and high quality.
 
 ```sh
-ALGOD_API_KEY=3HlRUk5h3G3UZeOWq3DN42boBkQ7yGI679WerzQN
 INFURA_API_KEY=cb876f7f7ed64fb98108a51fac39f934
 ALCHEMY_API_KEY=cpW9bVq33Ac3lBiI2pwc269AKbGvl9MF
 QUICKNODE_RPC_URL=https://spring-summer-crater.bsc.discover.quiknode.pro/b3879f82a5ba1cf011021703133fddfde26a59a2

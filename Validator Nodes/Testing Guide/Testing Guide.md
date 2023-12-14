@@ -89,10 +89,10 @@ PORT=7890
 ALGO_WALLET_MNEMONIC=<algorand-wallet-mnemonic>
 ETH_WALLET_PRIVATE_KEY=<ethereum-wallet-private-key>
 BNB_WALLET_PRIVATE_KEY=<binance-wallet-private-key>
-ALGOD_API_KEY=<your-algod-api-key>
-INFURA_KEY=<your-infura-key>
-TESTNET_ALCHEMY_KEY=<your-testnet-alchemy-key>
-MAINNET_ALCHEMY_KEY=<your-testnet-alchemy-key>
+ETH_MAINNET_ENDPOINT=<your-mainnet-endpoint>
+ETH_TESTNET_ENDPOINT=<your-testnet-endpoint>
+BNB_MAINNET_ENDPOINT=<your-mainnet-endpoint>
+BNB_TESTNET_ENDPOINT=<your-testnet-endpoint>
 " > ~/.equito-node/.env
 ```
 
@@ -104,11 +104,34 @@ PORT=7890
 ALGO_WALLET_MNEMONIC=gift only mouse goddess city benefit obtain evoke excite predict safe neither purpose route sock unfold boil pass battle agent body what abandon finish anchor
 ETH_WALLET_PRIVATE_KEY=756b7f2f95346df4767041da97be8f8c6cbd3cab9de46ef31c85b4af1c507c5a
 BNB_WALLET_PRIVATE_KEY=40325b340a0755405f6e13c297511a793c29db6b91ed2f9d6999d5624caccf3c
-ALGOD_API_KEY=3HlRUk5h3G3UZeOWq3DN46boBkQ7yGI719WerzQN
-INFURA_KEY=cb206f7f7ed64fb98108a56fac39f934
-TESTNET_ALCHEMY_KEY=ldhqIo8W9kfM6jHV31W4Xuvk2O2PMYP8
-MAINNET_ALCHEMY_KEY=cpW9bVq33Ac6lBjI2pwc266AKbGvl9MF
+ETH_MAINNET_ENDPOINT=https://mainnet.infura.io/v3/cb206f7f7ed64fb98108a56fac39f934
+ETH_TESTNET_ENDPOINT=https://goerli.infura.io/v3/cb206f7f7ed64fb98108a56fac39f934
+BNB_MAINNET_ENDPOINT=https://spring-summer-crater.bsc.quiknode.pro/b3119f82a5ba1cf011021703136fddfde26a69a2/
+BNB_TESTNET_ENDPOINT=https://dark-wandering-tree.bsc-testnet.quiknode.pro/58aaf9b78f359d477e060faf24bb51c4c2d2389c/
 " > ~/.equito-node/.env
+```
+
+These are the examples of endpoints.
+
+**Infura** (Ethereum Mainnet & Testnet)
+
+```sh
+https://mainnet.infura.io/v3/cb206f7f7ed64fb98108a56fac39f934
+https://goerli.infura.io/v3/cb206f7f7ed64fb98108a56fac39f934
+```
+
+**Alchemy** (Ethereum Mainnet & Testnet)
+
+```sh
+https://eth-mainnet.g.alchemy.com/v2/cpW9bVq33Ac6lBjI2pwc266AKbGvl9MF
+https://eth-goerli.g.alchemy.com/v2/ldhqIo8W9kfM6jHV31W4Xuvk2O2PMYP8
+```
+
+**QuickNode** (Binance Mainnet & Testnet)
+
+```sh
+https://spring-summer-crater.bsc.quiknode.pro/b3119f82a5ba1cf011021703136fddfde26a69a2/
+https://dark-wandering-tree.bsc-testnet.quiknode.pro/58aaf9b78f359d477e060faf24bb51c4c2d2389c/
 ```
 
 You can confirm that the variables are set correctly in .env file.
@@ -139,28 +162,32 @@ CONTAINER ID   IMAGE                               COMMAND                  CREA
 ### Configuring node
 
 The following services offer Ethereum clients with websockets connectivity known to work with the Validator node.
-It is necessary to get API keys and set them in .env file.
-
-#### PureStake
-
-Visit [PureStake](https://developer.purestake.io/) and create API key.
-
-![PureStake](./purestake.png)
+It is necessary to get API endpoints and set them in .env file.
 
 #### Alchemy
 
-Visit [Alchemy](https://www.alchemy.com/) and create API key.
+Visit [Alchemy](https://www.alchemy.com/) and create API endpoints.
 
 ![Alchemy](./alchemy.png)
 
-![Alchemy key](./alchemy-key.png)
+![Alchemy Endpoint](./alchemy-endpoint.png)
 
 #### Infura
 
-Visit [Infura](https://www.infura.io/) and create API key.
+Visit [Infura](https://www.infura.io/) and create API endpoints.
 
 ![Infura](./infura.png)
 
+![Infura Endpoint](./infura-endpoint.png)
+
+#### QuickNode
+
+Visit [QuickNode](https://www.quicknode.com/) and create API endpoints.
+
+![QuickNode](./quicknode-endpoint.png)
+
+![QuickNode Endpoint](./quicknode-endpoint.png)
+
 These are the only environment variables that are required for a Validator node to run.
-Configure the necessary environment variables in the .env file by obtaining API keys from relevant external services.
-We recommend you to use premium API key for optimal performance and high quality.
+Configure the necessary environment variables in the .env file by obtaining API endpoints from relevant external services.
+We recommend you to use premium API endpoints for optimal performance and high quality.
